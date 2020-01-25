@@ -5,7 +5,7 @@ class Player:
         self.hand = []
 
     def show_hand(self):
-        for card in hand:
+        for card in self.hand:
             card.show()
 
     def add_card(self, card):
@@ -16,3 +16,12 @@ class Player:
 
     def discard_card(self):
         return self.hand.pop()
+
+    def reset_hand(self):
+        self.hand = []
+    
+    def has_cards(self):
+        if len(self.hand) > 0:
+            return True
+        else:
+            return False
