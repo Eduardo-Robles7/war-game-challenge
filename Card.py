@@ -12,3 +12,6 @@ class Card:
         }
         val = switcher.get(self.value, self.value)
         print("{} of {}".format(val, self.suit))
+    
+    def get_value(self):
+        return self.value
