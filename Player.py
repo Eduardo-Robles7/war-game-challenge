@@ -14,7 +14,7 @@ class Player:
     def add_cards(self, cards):
         self.hand.extend(cards)
 
-    def discard_card(self):
+    def pop_card(self):
         return self.hand.pop()
 
     def reset_hand(self):
