@@ -27,9 +27,9 @@ def main():
         if(player_card == cpu_card):
             print('\nWAR\n')
             tied = True
-            war_cards = []
+            war_cards = [player_card, cpu_card]
             while(tied):
-                if(not player.has_cards() or not cpu.has_cards()):
+                if(player.card_count() < 2 or cpu.card_count() < 2):
                     tied == False
                     break
 
@@ -40,11 +40,13 @@ def main():
 
                 war_cards.extend([player_card1, player_card2, cpu_card1, cpu_card2])
 
-                if(player_card2 > cpu_card2):
+                if(player_card2 == cpu_card2):
+                    print('\nWar Again')
+                elif(player_card2 > cpu_card2):
                     player_stash.extend(war_cards)
                     print('\n{} Wins War'.format(player.name))
                     tied = False
-                elif(player_card2 < cpu_card2):
+                else:
                     cpu_stash.extend([war_cards])
                     print('\n{} Wins Round'.format(cpu.name))
                     tied = False
@@ -57,6 +59,15 @@ def main():
             print('\n{} Wins Round'.format(cpu.name))
 
         print('---------------------------------')
+
+    if(len(player_stash) > len(cpu_stash)):
+        print("\n\nWinner Player")
+        print(len(player_stash))
+    else:
+        print('\n\nWinner CPU')
+        print(len(cpu_stash))
+
+
 
     
 

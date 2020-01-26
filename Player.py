@@ -25,3 +25,5 @@ class Player:
             return True
         else:
             return False
+    def card_count(self):
+        return len(self.hand)
