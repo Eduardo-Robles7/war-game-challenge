@@ -34,6 +34,8 @@ Represents a single card in the deck.
 * **show()** - returns string containing value and suit of card
 * **get_value()** - returns the value of the card
 
+---
+
 ### Player
 Represents a single player in the game. Each player has a name and a hand of cards. 
 
@@ -49,6 +51,8 @@ Represents a single player in the game. Each player has a name and a hand of car
 * **reset_hands()** - resets haand to be empty
 * **has_cards()** - returns true if player has cards in hand, false otherwise 
 * **card_count()** - returns count of cards in player hand
+
+--- 
 
 ### Deck
 
