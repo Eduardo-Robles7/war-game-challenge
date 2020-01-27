@@ -80,7 +80,7 @@ python Main.py
 ## Assumptions 
 * A single standard deck of 52 cards is being used.
 * Two players only playing the game.
-* Incase of war, only two additional card are drawn, other variations draw three.
+* In case of war, only two additional card are drawn, other variations draw three.
 * The game ends if at any point a player runs out of cards.
 
 ## Corner cases 
