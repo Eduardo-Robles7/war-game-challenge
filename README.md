@@ -48,7 +48,7 @@ Represents a single player in the game. Each player has a name and a hand of car
 * **add_card(card)** - adds a card to the player hand
 * **add_cards(cards)** - adds a list of cards to the player hand
 * **pop_card()** - returns the top card from hand 
-* **reset_hands()** - resets haand to be empty
+* **reset_hands()** - resets hand to be empty
 * **has_cards()** - returns true if player has cards in hand, false otherwise 
 * **card_count()** - returns count of cards in player hand
 
@@ -62,14 +62,14 @@ Represents a single player in the game. Each player has a name and a hand of car
 * **suits**- list of all card suits
 
 #### Methods
-* **initialize_deck()** - initializes deck with every card
+* **initialize_deck()** - initialize deck with every card
 * **show_deck()** - displays are cards in the deck
 * **shuffle_deck()** - shuffles the deck of cards
 * **split_deck()** - splits deck of cards between two players
 
 ## How to run the game
 The logic and setup of the game is implemented in `Main.py`.   
-Game is ran in the terminal and does not require external user input.  
+Game is ran in the terminal and does not need external user input.  
 Currently the game is configured for two players.
 
 In the terminal run 
@@ -87,10 +87,10 @@ python Main.py
 * To the best of my knowledge and testing, the case of multiple wars repeating has been handled. 
 
 ## Future improvements that could be added to the game given more time
-* A grahical user interface that displays users, cards, and current score.
-* Allow for variations of the game to be played or customized by user
-    * Draw three additional cards instead of standard two
-    * Limit the number of wars that can occur
-    * The number of decks being used
-* Support for more than two players
-* Additional unit testing for all the functions
+* A graphical user interface that displays users, cards, and current score.
+* Allow for variations of the game to be played or customized by user.
+    * Draw three additional cards instead of standard two.
+    * Limit the number of wars that can occur.
+    * The number of decks being used.
+* Support for more than two players.
+* Additional unit testing for all the functions.
