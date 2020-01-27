@@ -26,13 +26,13 @@ Data is encapsulated  and handled by class methods.
 ### Card
 Represents a single card in the deck. 
 
-Properties
-* value - numerical value of card
-* suit - the suit of the card
+#### Properties
+* **value** - numerical value of card
+* **suit** - the suit of the card
 
-Methods
-* show() - returns string containing value and suit of card
-* get_value() - returns the value of the card
+#### Methods
+* **show()** - returns string containing value and suit of card
+* **get_value()** - returns the value of the card
 
 ### Player
 
