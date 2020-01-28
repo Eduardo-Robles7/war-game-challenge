@@ -21,6 +21,7 @@ def main():
 
     #setup deck and stashes
     deck = Deck()
+    deck.initialize_deck()
     deck.shuffle_deck()
     deck.split_deck(player, cpu)
     player_stash = []
