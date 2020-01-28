@@ -8,16 +8,22 @@ class Player:
 
     def show_hand(self):
         """Displays all cards in player hand"""
-        for card in self.hand:
-            card.show()
+        if self.hand:
+            for card in self.hand:
+                card.show()
+                return 1
+        else:
+            return -1
 
     def add_card(self, card):
         """Adds a card to player hand"""
-        self.hand.append(card)
+        if card:
+            self.hand.append(card)
     
     def add_cards(self, cards):
         """Adds a list of cards to player hand"""
-        self.hand.extend(cards)
+        if cards:
+            self.hand.extend(cards)
 
     def pop_card(self):
         """Returns top card hand"""

@@ -8,7 +8,6 @@ class Deck:
         self.cards = []
         self.values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
         self.suits = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
-        #self.initialize_deck()
 
     def initialize_deck(self):
         """Initializes deck with every card"""
@@ -24,7 +23,6 @@ class Deck:
             return 1
         else:
             return -1
-
 
     def shuffle_deck(self):
         """Shuffles the deck of cards"""

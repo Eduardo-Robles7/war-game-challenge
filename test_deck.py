@@ -5,6 +5,7 @@ from Player import Player
 class TestDeck(unittest.TestCase):
 
     def test_initialize_deck(self):
+        """Tests the initialization of deck with proper cards"""
         print('Test Initialize Deck')
         deck = Deck()
         deck.initialize_deck()
@@ -17,14 +18,15 @@ class TestDeck(unittest.TestCase):
         self.assertEqual(len(deck.cards), len(cards))
     
     def test_show_deck(self):
+        """Tests deck showing cards if count is greater than zero"""
         print('Test Show Deck')
         deck = Deck()
         self.assertEqual(deck.show_deck(), -1)
-
         deck.initialize_deck()
         self.assertEqual(deck.show_deck(), 1)
 
     def test_shuffle_deck(self):
+        """Tests the shuffling of cards in the deck"""
         print('Test Shuffle Deck')
         deck = Deck()
         deck2 = Deck()
@@ -39,6 +41,7 @@ class TestDeck(unittest.TestCase):
         self.assertEqual(equal, False)
 
     def test_split_deck(self):
+        """Tests splitting the deck of cards between two players"""
         print('Test Split Deck')
         deck = Deck()
         player1 = Player('Bob')
