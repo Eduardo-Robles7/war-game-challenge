@@ -77,6 +77,27 @@ In the terminal run
 python Main.py
 ```
 
+## How to run unit tests
+Unit tests have been written for the following classes
+* Card
+* Deck
+* Player
+
+Card 
+```console
+python test_card.py
+```
+
+Deck
+```console
+python test_deck.py
+```
+
+Player
+```console
+python test_player.py
+```
+
 ## Assumptions 
 * A single standard deck of 52 cards is being used.
 * Two players only playing the game.
